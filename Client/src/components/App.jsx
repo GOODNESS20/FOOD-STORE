@@ -3,7 +3,7 @@ import Navbar from "../Navbar/navbar";
 import Cart from "../pages/cart";
 import Login from "../Login/login";
 import Header from "../Header/header";
-import ProductSection from "../ProductSection/productSection";
+import ProductSection from "../ProductSection/productsection";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ProductProvider } from "../ProductContext/productcontext";
 import ProductCard from "../ProductCard/productcard";
