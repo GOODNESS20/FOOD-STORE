@@ -1,0 +1,128 @@
+/* ====== Container ====== */
+.orders-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* ====== Header ====== */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.orders-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.orders-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.back-btn,
+.profile-btn {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover,
+.profile-btn:hover {
+  background-color: #27ae60;
+}
+
+/* ====== Order List ====== */
+.orders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-item {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #3498db;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Order Info ====== */
+.order-item p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.order-item strong {
+  color: #2c3e50;
+}
+
+/* ====== Item List Inside Order ====== */
+.order-item ul {
+  list-style: none;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.order-item ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.order-item ul li:last-child {
+  border-bottom: none;
+}
+
+/* ====== Empty Orders ====== */
+.orders-container > p {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+  .orders-container {
+    padding: 20px;
+  }
+
+  .orders-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .order-item {
+    padding: 15px;
+  }
+}

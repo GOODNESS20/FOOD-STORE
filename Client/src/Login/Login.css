@@ -1,0 +1,84 @@
+/* Reset default margins and padding */
+
+/* Form Container */
+.form {
+  margin-left: 35%;
+  margin-top: 8%;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 50vh;
+  font-size: 3rem;
+}
+
+/* Form Title (Optional - Add <h2> in JSX if desired) */
+.form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Input Fields */
+.form input[type="text"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Button */
+.form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #357abd;
+}
+
+/* Conditional Register Button Styling */
+.form button:is(:not(:disabled)) {
+  background-color: #50c878; /* Green for Register */
+}
+
+.form button:is(:not(:disabled)):hover {
+  background-color: #3d9a5a;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .form input[type="text"],
+  .form input[type="password"],
+  .form button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,49 @@
+/* ProductCard.css */
+.product-card {
+  position: fixed; /* Overlay instead of flow */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 30; /* Above other elements */
+  text-align: center;
+  min-width: 300px;
+  max-height: 80vh; /* Prevent overflow */
+  color: #333;
+  overflow-y: auto; /* Scroll if content exceeds */
+}
+
+.product-card h3,
+.product-card p {
+  margin: 10px 0; /* Ensure text is visible */
+  font-size: 1.2em;
+  color: #333 !important;
+  opacity: 1 !important; /* Ensure not transparent */
+  visibility: visible !important; /* Ensure not hidden */ /* Readable size */
+}
+
+.product-card-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #245b2a;
+}

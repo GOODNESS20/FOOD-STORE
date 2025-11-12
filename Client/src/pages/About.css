@@ -1,0 +1,139 @@
+.about-section {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #1b5e20;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.about-slogan {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1b5e20;
+  margin-top: 40px;
+}
+
+/* Optional background image */
+.about-section.bg-image {
+  background-image: url("/images/food-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* existing styles … */
+
+.connect-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 2rem;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.connect-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.connect-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.connect-icons .icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s;
+}
+
+.connect-icons .icon:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive styling */
+
+
+@media (min-width: 300px) and (max-width:768px) {
+  .about-title {
+    margin-top: 250px;
+    font-size: 1.5rem;
+    color: #1b5e20;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-slogan {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1b5e20;
+  margin-top: 20px;
+}
+
+  .connect-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.connect-icons .icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.connect-section {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 1.5rem;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.connect-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+}
